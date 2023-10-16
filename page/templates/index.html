@@ -1,0 +1,55 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Website</title>
+    <link rel="stylesheet" href="/static/Asset/css/style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <div class="navbar">
+            <img src="/static/Asset/logo.png" class="logo">
+            <button class="btns">sign up</a></button>
+        </div>
+        <div class="text">
+            <small>Welcome </small>
+            <h1>I'm a  <span class="auto-type"> </span></h1>
+            <button class="btns"><a href="{% url 'login' %}">Click Here</a></button>
+        </div>
+        <div class="side-bar">
+            <img src="/static/Asset/menu.png" class="menu">
+            <div class="social-links">
+                <img src="/static/Asset/fb.png">
+                <img src="/static/Asset/ig.png">
+                <img src="/static/Asset/tw.png">
+            </div>
+            <div class="useful-link">
+                <img src="/static/Asset/share.png">
+                <img src="/static/Asset/info.png">
+            </div>
+        </div>
+        <div class="bubbles">
+            <img src="/static/Asset/bubble.png">
+            <img src="/static/Asset/bubble.png">
+            <img src="/static/Asset/bubble.png">
+            <img src="/static/Asset/bubble.png">
+            <img src="/static/Asset/bubble.png">
+            <img src="/static/Asset/bubble.png">
+            
+        </div>
+    </div>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Programmer", "Front-End Developer", "Back-End Developer"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        });
+      </script>
+</body>
+</html>
+
